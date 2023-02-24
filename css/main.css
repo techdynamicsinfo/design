@@ -71,15 +71,18 @@ img {
 
 .navbar-nav .nav-link {
     font-weight: 500;
-    color: var(--c-dark);
+    color: #787fd3;
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--c-brand);
-    font-weight: 600;
+    color: #fff;
 }
 
 /* CAROUSEL */
+.nav-bg {
+    background-color: #151a5a;
+    border-bottom: 1px solid #4e57d436;
+}
 #hero-section{
     background: linear-gradient(red);
     background-position: center;
@@ -88,9 +91,10 @@ img {
 .car-img{
     height: 550px;
     object-fit: cover;
-    max-height: 550px;
+    max-height: 600px;
     min-height: 400px;
     width: 100%;
+    /* filter: brightness(0.5); */
 }
 
 .carousel-caption {
@@ -99,13 +103,30 @@ img {
     bottom: 1.25rem;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 60%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
 }
-
+.overlap-color{
+    background: linear-gradient(45deg, #055ba0bd, #2196f369);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel-txt h5{
+    font-size: 3em;
+    line-height: 1.2;
+}
+.carousel-txt p{
+    font-size: 1.5em;
+    line-height: 1.2;
+}
 /* ABOUT */
 .section-title {
     margin-bottom: 60px;
@@ -145,6 +166,9 @@ img {
 }
 
 /* SERVICE */
+/* section#services {
+    background-color: #234578;
+} */
 .service {
     position: relative;
     overflow: hidden;
@@ -182,7 +206,11 @@ img {
     background-color: rgba(255,255,255,0.2);
     color: white;
 }
-
+/* FAQ */
+.faq-box{
+    max-width: 650px;
+    margin: auto;
+}
 /* TEAM */
 .team-member-content {
     background-color: var(--c-brand);
@@ -278,7 +306,14 @@ footer .line {
     gap: 1rem;
     display: flex;
 }
-
+@media screen and (max-width:768px) {
+    .team-member-content{
+        opacity: 1;
+        bottom: 0;
+        width: calc(100% - 0px);
+        background-color: #4e57d4b0;
+    }
+}
 @media screen and (max-width:425px) {
     .car-img {
         height: 250px;
@@ -288,5 +323,28 @@ footer .line {
         border: 1px solid #4a53ca;
         border-radius: 5%;
     }
-    
+    .carousel-txt h5 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    .carousel-txt p{
+        font-size: 1em;
+        line-height: 1.2;
+    }
+    .carousel-caption{
+        top: 50%;
+        right: -20%;
+        left: 50%;
+    }
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .team-member-content{
+        opacity: 1;
+        bottom: 0;
+        width: calc(100% - 0px);
+        background-color: #4e57d4b0;
+    }
+   
 }
