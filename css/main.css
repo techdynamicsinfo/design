@@ -135,7 +135,7 @@ img {
     font-weight: 700;
 }
 .section-title p{
-    max-width: 500px;
+    max-width: 570px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -173,7 +173,7 @@ img {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    height: 20rem;
+    height: 25rem;
     margin-bottom: 2rem;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     background-color: #ffffff;
@@ -237,6 +237,9 @@ img {
 .contact-bg{
     background-color: #edeefb;
 }
+.get-txt-color{
+    color: #51547e;
+}
 .form-control{
     padding: 1rem 0.75rem;
 }
@@ -286,7 +289,10 @@ footer .line {
     margin-top: 12px;
     margin-bottom: 24px;
 }
-
+.fl-us-txt{
+    color: #959ad5;
+    font-weight: 600;
+}
 .social-icons a {
     width: 40px;
     height: 40px;
@@ -322,6 +328,7 @@ footer .line {
     .service{
         border: 1px solid #4a53ca;
         border-radius: 5%;
+        height: 20rem;
     }
     .carousel-txt h5 {
         font-size: 1.5em;
